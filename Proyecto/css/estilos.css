@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container>* {
+    box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+    border: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: #444444;
+    height: 50px;
+    COLOR: #ffff;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #1d0b0b;
+    COLOR: #ffff;
+    position: absolute;
+    margin-right: -200px;
+    width: 300px;
+    height: 50px;
+}
+
+.articlebar {
+    grid-area: articlebar;
+    background-color: #27F635;
+}
+
+.main2 {
+    grid-area: main2;
+    background-color: #ff6600;
+    position: absolute;
+    top: 50px;
+    width: 300px;
+    height: 57.4rem;
+}
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: #203AE2;
+}
+
+.grid-container {
+    display: grid;
+    gap: 15px;
+    grid-template-areas: "header header header""articlebar articlebar articlebar""main2 main1 main0""footer footer footer";
+}
+
+@media(min-width: 200px) {
+    .grid-container {
+        grid-template: "header header header" 50px "navbar navbar navbar" 180px "articlebar articlebar articlebar" 100px "main2 main2 " 245px "footer footer footer";
+    }
+}
+
+@media (max-width: 600px) {
+
+    .main2,
+    .main1,
+    .main0 {
+        grid-column: 1 /span 3;
+    }
+
+    .grid-container {
+        grid-template-rows: repeat(7, 80px);
+    }
+}
+
+.icon1 {
+    position: absolute;
+    margin-left: -40px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.Dash {
+    text-decoration: none;
+    text-align: center;
+    color: #ffff;
+}
+
+.Dash1 {
+    text-decoration: none;
+    text-align: center;
+    color: #ffff;
+}
+
+.Dash2 {
+    text-decoration: none;
+    text-align: center;
+    color: #ffff;
+}
+
+.Dash3 {
+    text-decoration: none;
+    text-align: center;
+    color: #ffff;
+}
+
+.Dash4 {
+    text-decoration: none;
+    text-align: center;
+    color: #ffff;
+}
+
+.Dash5 {
+    text-decoration: none;
+    text-align: center;
+    color: #ffff;
+}
+
+.encabezado {
+    background-color: #203AE2;
+    position: absolute;
+    margin-left: 400px;
+    width: 90rem;
+    height: 50px;
+}
+
+.opci1 {
+    background-color: rgb(218, 204, 20);
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 400px;
+    width: 20rem;
+    height: 80px;
+}
+
+.opci2 {
+    background-color: rgb(255, 15, 183);
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 800px;
+    width: 20rem;
+    height: 80px;
+}
+
+.opci3 {
+    background-color: rgb(218, 40, 40);
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 1200px;
+    width: 20rem;
+    height: 80px;
+}
+
+.opci4 {
+    background-color: rgb(8, 226, 255);
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 1600px;
+    width: 15rem;
+    height: 80px;
+}
+
+.caja1 {
+    background-color: rgb(32, 50, 53);
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 400px;
+    width: 40rem;
+    height: 300px;
+}
+
+.caja2 {
+    background-color: rgb(42, 125, 139);
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 1110px;
+    width: 46rem;
+    height: 300px;
+}
+
+.cj1 {
+    background-color: rgb(16, 17, 17);
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 400px;
+    width: 60rem;
+    height: 250px;
+}
+.cj2 {
+    background-color: rgb(159, 197, 197);
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 1522px;
+    width: 20rem;
+    height: 250px;
+}
+
+
+
+.ball {
+    display: grid;
+    gap: 15px;
+    grid-area: "encabezado encabezado encabezado""opci1 opci2 opci3 opci4""caja1 caja2""cj1 cj2";
+}
